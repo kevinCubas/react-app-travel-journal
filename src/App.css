@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/*-- other styles --*/
+
+.link a {
+  color: hsla(254, 6%, 58%, 1);
+  font-size: 0.6875rem;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 0.6875rem;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  padding: 0 0.75rem 0 0.25rem;
+}
+img {
+  max-width: 100%;
+}
+
+/*-- Navbar style --*/
+nav {
+  background-color: hsla(0, 89%, 66%, 1);
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.nav-icon {
+  width: 1.5rem;
+  padding-right: 7px;
+}
+
+.nav-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+/*-- location card style --*/
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  min-width: 200px;
+  grid-gap: 36px;
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+.card {
+  border-radius: 5px;
+  color: hsla(250, 18%, 19%, 1);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -30px;
+  text-align: center;
+}
+
+.card-container {
+  padding: 1rem;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+}
+
+.location-img {
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.location-card-title {
+  padding: 4px 0 5px 0;
+  line-height: 30px;
+}
+
+.start-end-date {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+p {
+  text-align: start;
+  font-size: 0.75rem;
+  padding-top: 9px;
+}
+/*-- footer style --*/
+footer {
+  background-color: hsla(0, 89%, 66%, 1);
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+footer a,
+footer p {
+  color: hsla(0, 0%, 100%, 1);
+}
+
+@media screen and (min-width: 500px) {
+  .card {
+    display: flex;
+    align-items: center;
+    text-align: start;
+  }
+
+  .card-container {
+    margin-left: 19px;
+    padding: 0;
+  }
+  .location-img {
+    width: 130px;
+    height: 170px;
+    border-radius: 5px;
+    vertical-align: middle;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+}
